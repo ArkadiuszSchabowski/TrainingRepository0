@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+<script src="jquery-1.11.3.min.js"></script>
+    <style>
+.circle {
+    width:40vh;
+    height:40vh;
+    background-color:white;
+    border-radius: 50%;
+    border-bottom: 120px solid red;
+    border-left: 120px solid orange;
+    border-right: 120px solid blue;
+    border-top: 120px solid green;
+    margin: 0 auto;
+    transition: transform 10s ease, border 7s ease-in-out, background-color 12s ease;
+}
+
+.active{
+    transform: rotate(4340deg);
+    border-bottom-color: yellow;
+    border-left-color: darkgreen;
+    border-right-color: cadetblue;
+    border-top-color: crimson;
+    background-color: black;
+}
+
+
+button {
+    background-color: brown;
+    color: white;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+  border-radius:8px;
+  font-size: 24px;
+  font-family: 'open sans', arial;
+}
+
+button:hover {
+  background-color: maroon;
+  cursor: pointer;
+}
+    </style>
+<meta charset="utf-8">
+<meta name="vievport" content="width=device-width, initia;-scale=1.0">
+<meta name="description" content="Super gra o świnkach morskich. Najlepsze gryzonie pod słońcem">
+<title>circle</title>
+<link href="https://fonts.google.com/" rel="stylesheet">
+</head>
+<body>
+<div class="circle"></div>
+<button>Zakręć</button>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    $('button').click(function(){
+    $('.circle').toggleClass('active');
+})
+</script>
+</body>
+</html>
