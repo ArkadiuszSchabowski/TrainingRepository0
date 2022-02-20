@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0;}
+
+#dark, #fridge, #button {position:absolute;}
+
+#fridge {
+    width:100vw;
+    height: 100vh;
+    background-image: url("fridge.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+#dark {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 2;
+}
+
+#button {
+    width: 100px;
+    height: 100px;
+    border: 50px solid greenyellow;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 3;
+    top:30px;
+    left:30px;
+}
+#button:hover + #dark {border-color:transparent}
+}
+
+
+
+
+p {
+color: red;
+text-align: center;
+font-size: 30px;
+}
