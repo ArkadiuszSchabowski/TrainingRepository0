@@ -16,6 +16,7 @@
     height: 100vh;
     background-color: black;
     z-index: 2;
+    transition: all 1s ease;
 }
 
 #button {
@@ -28,14 +29,6 @@
     top:30px;
     left:30px;
 }
-#button:hover + #dark {border-color:transparent}
-}
 
-
-
-
-p {
-color: red;
-text-align: center;
-font-size: 30px;
-}
+#button:hover + #dark {
+    background-color: transparent;}
