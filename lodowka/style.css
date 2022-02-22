@@ -1,46 +1,46 @@
 * { margin: 0; padding: 0;}
 
-#dark, #fridge, #button {position:absolute;}
+button, .dark, .fridge {position:absolute;}
 
-body {
-    background-color: silver;
-    color: red;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
+.fridge {
+width:50vw;
+height: 50vh;
+background-image: url("fridge.jpg");
+background-repeat: no-repeat;
+background-position: center;
+margin-top: 150px;
+margin-bottom: auto;
+margin-left: 300px;
+margin-right: auto;
+z-index: 1;
 }
 
-#fridge {
-    width:50vw;
+.dark {
+    width: 50vw;
     height: 50vh;
-    background-image: url("fridge.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  margin-top: 150px;
-  margin-bottom: auto;
-  margin-left: 300px;
-  margin-right: auto;
-    z-index: 1;
-}
-
-#dark {
-    width: 100vw;
-    height: 100vh;
     background-color: black;
     z-index: 2;
-    transition: all 1s ease;
+    transition: 1s linear;
+    background-position: center;
+margin-top: 150px;
+margin-bottom: auto;
+margin-left: 300px;
+margin-right: auto;
 }
 
-#button {
-    width: 100px;
-    height: 100px;
-    border: 50px solid red;
-    border-radius: 50%;
-    box-sizing: border-box;
-    z-index: 3;
-    top:30px;
-    left:30px;
-}
+    .active{
+    background-color: transparent;
+    }
 
-#button:hover + #dark {
-    background-color: transparent;}
+    button {
+        width: 100px;
+        height: 100px;
+        color: red;
+        background-color: black;
+        font-size: 24px;
+        z-index: 3;
+        top:30px;
+        left:30px;
+        margin-left: 20px;
+        margin-top: 450px;
+    }

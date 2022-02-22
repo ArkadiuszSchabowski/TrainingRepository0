@@ -9,9 +9,17 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
 <body>ŚWINKI JESZCZE ŚPIĄ
-<div id="fridge"></div>
-<div id="button"></div>
- <div id="dark"></div>
-  <script src="java.js"></script>
+  <div class="dark"></div>
+  <div class="fridge"></div>
+<div class="guzik"></div>
+  <button>Cyk</button>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$('button').click(function(){
+  $('.dark').toggleClass('active');
+  })
+</script>
+<!--<script src="jquery-1.11.3.min.js"></script>-->
+<!--<script src="java.js" type="text/javascript"></script>-->
 </body>
 </html>
