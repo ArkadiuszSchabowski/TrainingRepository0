@@ -1,0 +1,46 @@
+* {margin:0;
+padding:0;}
+
+header, nav, section, footer {position:absolute}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("las.jpg");
+    overflow: hidden;
+    background-repeat: repeat;
+    }
+
+header {
+    width: 96%;
+    height: 10%;
+    background-color: greenyellow;
+    top: 2%;
+    left: 2%;
+    z-index: 4;
+}
+nav {
+    width: 16%;
+    height: 70%;
+    background-color: yellow;
+    top: 15%;
+    left: 2%;
+    z-index: 3;
+    
+}
+section {
+    width: 78%;
+    height: 70%;
+    background-color: green;
+    top: 15%;
+    left: 20%;
+    z-index: 2;
+}
+footer {
+    width: 96%;
+    height: 10%;
+    background-color: lightgreen;
+    left: 2%;
+    bottom: 2%;
+    z-index: 1;
+}
