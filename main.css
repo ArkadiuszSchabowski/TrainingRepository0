@@ -18,7 +18,18 @@ header {
     top: 2%;
     left: 2%;
     z-index: 4;
+    display: flex;
 }
+ul {
+    display: flex;
+}
+
+    li {
+        color: red;
+        display: inline-block;
+        font-size: 40px;
+}
+
 nav {
     width: 16%;
     height: 70%;
@@ -26,7 +37,6 @@ nav {
     top: 15%;
     left: 2%;
     z-index: 3;
-    
 }
 section {
     width: 78%;
@@ -43,4 +53,7 @@ footer {
     left: 2%;
     bottom: 2%;
     z-index: 1;
+}
+button {
+
 }
