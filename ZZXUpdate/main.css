@@ -1,0 +1,134 @@
+* {margin:0;
+padding:0;}
+
+header, nav, section, footer, button {position:absolute}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("las.jpg");
+    overflow: hidden;
+    background-repeat: repeat;
+    display: flex;
+    }
+
+header {
+    width: 96%;
+    height: 10%;
+    background-color: greenyellow;
+    top: 2%;
+    left: 2%;
+    z-index: 4;
+}
+button {
+        left: 1%;
+        top: 5%;
+    z-index: 5;
+}
+    ul {
+        margin: auto;
+      }
+    li {
+        color: red;
+        display: inline-block;
+        font-size: 40px;
+        margin-left: 10%;
+        text-shadow: 0 0 30px white, 0 0 10px yellow;
+        transition: opacity 5s;
+}
+
+nav {
+    width: 16%;
+    height: 70%;
+    background-color: yellow;
+    top: 15%;
+    left: 2%;
+    z-index: 3;
+}
+section {
+    width: 78%;
+    height: 70%;
+    background-color: green;
+    top: 15%;
+    left: 20%;
+    z-index: 2;
+}
+footer {
+    width: 96%;
+    height: 10%;
+    background-color: lightgreen;
+    left: 2%;
+    bottom: 2%;
+    z-index: 1;
+}
+li:nth-child(1) {
+    transform: translateY(4px);
+    animation: neon 2s infinite linear;
+  }
+  
+  li.off {
+    opacity: 0;
+    /* dodatkowy element ponad to co w filmie*/
+    animation-play-state: paused;
+    /*Można też wyłączyć animacje pisząc animation: none */
+  }
+  
+  @keyframes neon {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    30% {
+      opacity: 0.5
+    }
+    32% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 1;
+    }
+    46% {
+      opacity: 0.5;
+    }
+    54% {
+      opacity: 0.5;
+    }
+    55% {
+      opacity: 1;
+    }
+    77% {
+      opacity: 1;
+    }
+    78% {
+      opacity: 0;
+    }
+    88% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1
+    }
+    93% {
+      opacity: 1
+    }
+    95% {
+      opacity: 0
+    }
+    97% {
+      opacity: 0
+    }
+    98% {
+      opacity: 1
+    }
+    100% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Your Page Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Your name">
+  <link href="napis.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+<button>WYŁĄCZ</button>
+  <ul>
+    <li>W</li>
+    <li>E</li>
+    <li>B</li>
+    <li>S</li>
+    <li>A</li>
+    <li>M</li>
+    <li>U</li>
+    <li>R</li>
+    <li>A</li>
+    <li>J</li>
+    <li>.</li>
+    <li>P</li>
+    <li>L</li>
+  </ul>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <scritpt>
+    var button = document.querySelector("button");
+    button.addEventListener("click", function() {
+      if (this.textContent == "WŁĄCZ") {
+        this.textContent = "WYŁĄCZ";
+      } else {
+        this.textContent = "WŁĄCZ";
+      }
+      const letters = document.querySelectorAll("li");
+      for (var i = 0; letters.length > i; i++) {
+        letters[i].classList.toggle("off");
+    })
+  </scritpt>
+  </body>
+  </html>
