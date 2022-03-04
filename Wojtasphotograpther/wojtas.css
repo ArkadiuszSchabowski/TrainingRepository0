@@ -1,0 +1,16 @@
+* {
+margin: 0;
+padding: 0;
+}
+header {
+    font-size: 100px;
+}
+.fa-brands {
+    font-family: 'Font Awesome\ 5 free', 'Font Awesome\ 5 brands';
+}
+.fa {
+    font: 'Font Awesome\ 5 free', 'Font Awesome\ 5 brands';
+}
+p {
+    font-family: "Anton";
+}
